@@ -1,5 +1,7 @@
 import Image from "next/image";
-import {Home as HomeIcon, Search, Library, Plus, Heart} from 'lucide-react';
+import {Home as HomeIcon, Search, Library, Plus, Heart, ChevronLeft, ChevronRight, CircleChevronLeft} from 'lucide-react';
+// import { ChevronLeft, ChevronRight, CircleChevronLeft } from "../../node_modules/lucide-react/dist/lucide-react";
+// import { ChevronLeft, ChevronRight } from "../../node_modules/lucide-react/dist/lucide-react";
 
 export default function Home() {
   return (
@@ -20,26 +22,26 @@ export default function Home() {
           </div>
           
           <nav className="space-y-5 mt-10">
-            <a href="" className="flex items-center  gap-3 text-ms font-semibold text-zinc-300 hover:text-zinc-50">
+            <a href="" className="flex items-center  gap-3 text-ms font-semibold text-zinc-300 hover:text-zinc-50 hover:font-bold">
               <HomeIcon />
               Home
             </a>
-            <a href="" className="flex items-center  gap-3 text-ms font-semibold text-zinc-300 hover:text-zinc-50">
+            <a href="" className="flex items-center  gap-3 text-ms font-semibold text-zinc-300 hover:text-zinc-50 hover:font-bold">
               <Search />
               Search
             </a>
-            <a href="" className="flex items-center gap-3 text-ms font-semibold text-zinc-300 hover:text-zinc-50">
+            <a href="" className="flex items-center gap-3 text-ms font-semibold text-zinc-300 hover:text-zinc-50 hover:font-bold">
               <Library/>
               Your Lybrary
             </a>
           </nav>
 
           <nav className="space-y-5 mt-14">
-            <a href="" className="flex items-center gap-3 text-ms font-semibold text-zinc-300 hover:text-zinc-50">
+            <a href="" className="flex items-center gap-3 text-ms font-semibold text-zinc-300 hover:text-zinc-50 hover:font-bold">
               <Plus/>
               Create Playlist
             </a>
-            <a href="" className="flex items-center gap-3 text-ms font-semibold text-zinc-300 hover:text-zinc-50">
+            <a href="" className="flex items-center gap-3 text-ms font-semibold text-zinc-300 hover:text-zinc-50 hover:font-bold">
               <Heart />
               Liked Songs
             </a>
@@ -47,29 +49,50 @@ export default function Home() {
 
           {/* Linha que divide as playlists */}
           <nav className="mt-8 pt-10 border-t-2 border-zinc-800 space-y-4 flex flex-col">
-            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200">This is back Victor e Leo</a>
-            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200">Hot hits Brasil</a>
-            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200">Sofrência antigas</a>
-            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200">Top Brasil</a>
-            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200">Tranquilo no Nilo</a>
-            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200">Músicas para celebrar a vida</a>
-            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200">Liga o som que é sexta-feira!</a>
-            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200">Clássicos para dançar até o chão</a>
-            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200">Nostálgicas e felizes</a>
-            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200">Para quem não sabe fazer playlist para festa</a>
-            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200">Tristeza não tem fim, felicidade sim</a>
-            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200">Sons da Solidão</a>
-            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200">Trilhas do Amor</a>
-            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200">Zezé de Camargo e Lucioano - As melhores</a>
-            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200">Menos é mais - As melhores</a>
+            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200 hover:font-semibold">This is back Victor e Leo</a>
+            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200 hover:font-semibold">Hot hits Brasil</a>
+            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200 hover:font-semibold">Sofrência antigas</a>
+            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200 hover:font-semibold">Top Brasil</a>
+            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200 hover:font-semibold">Tranquilo no Nilo</a>
+            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200 hover:font-semibold">Músicas para celebrar a vida</a>
+            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200 hover:font-semibold">Liga o som que é sexta-feira!</a>
+            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200 hover:font-semibold">Clássicos para dançar até o chão</a>
+            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200 hover:font-semibold">Nostálgicas e felizes</a>
+            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200 hover:font-semibold">Para quem não sabe fazer playlist para festa</a>
+            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200 hover:font-semibold">Tristeza não tem fim, felicidade sim</a>
+            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200 hover:font-semibold">Sons da Solidão</a>
+            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200 hover:font-semibold">Trilhas do Amor</a>
+            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200 hover:font-semibold">Zezé de Camargo e Lucioano - As melhores</a>
+            <a href="" className="text-sm  text-zinc-400 hover:text-zinc-200 hover:font-semibold">Menos é mais - As melhores</a>
 
           </nav>
 
         </aside>
 
         {/* Estrutura do corpo main */}
-        <main className="flex-1 p-6">
-          main
+        <main className="flex-1 p-7">
+          {/* div para os botões superiores */}
+          <div className="flex items-center gap-6 ml-1">
+            <button className="rounded-full bg-black/40 p-1 hover:bg-zinc-700">
+              <ChevronLeft />
+            </button>
+            <button className="rounded-full bg-black/40 p-1 hover:bg-zinc-700">
+              <ChevronRight />
+            </button>
+          </div>
+
+          {/* Texto */}
+          <h1 className="font-semibold text-3xl mt-10 ml-1 text-zinc-100">Good Afternoon</h1>
+
+          {/* Div com as colunas para colocar as musicas */}
+          <div className="grid grid-cols-3 gap-6 mt-5">
+            <div className="bg-slate-50/10 rounded h-20"> Playlist</div>
+            <div className="bg-slate-50/10 rounded h-20"> Playlist</div>
+            <div className="bg-slate-50/10 rounded h-20"> Playlist</div>
+            <div className="bg-slate-50/10 rounded h-20"> Playlist</div>
+            <div className="bg-slate-50/10 rounded h-20"> Playlist</div>
+            <div className="bg-slate-50/10 rounded h-20"> Playlist</div>
+          </div>
         </main>
       </div>
 
