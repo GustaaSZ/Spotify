@@ -16,7 +16,7 @@ export default function Home() {
 
          {/* Div para a imagem do spotify */}
           <a href="#" className="flex items-center gap-3">
-            <Image src="/spotify.png" width={60} height={60} alt="spotify icon" />
+            <Image src="/spotify.png" width={50} height={40} alt="spotify icon" />
             <strong className="text-2xl">Spotify</strong>
           </a>
 
@@ -98,24 +98,24 @@ export default function Home() {
               <strong>Deus e eu no Sertão</strong>
             </a>
             <a href="#" className="bg-slate-50/10 rounded overflow-hidden flex items-center gap-5 hover:bg-white/15"> 
-              <Image src="/album.jpeg" width={120} height={80} alt="Capa do Albúm Deus e eu no sertão da dupla Victor e Leo" />
-              <strong>Deus e eu no Sertão</strong>
+              <Image src="/u2.jpg" width={120} height={80} alt="Capa do Albúm Deus e eu no sertão da dupla Victor e Leo" />
+              <strong>The best of 1980-1990</strong>
             </a>
             <a href="#" className="bg-slate-50/10 rounded overflow-hidden flex items-center gap-5 hover:bg-white/15"> 
-              <Image src="/album.jpeg" width={120} height={80} alt="Capa do Albúm Deus e eu no sertão da dupla Victor e Leo" />
-              <strong>Deus e eu no Sertão</strong>
+              <Image src="/adele.jpg" width={120} height={80} alt="Capa do Albúm Deus e eu no sertão da dupla Victor e Leo" />
+              <strong>Adele 25</strong>
             </a>
             <a href="#" className="bg-slate-50/10 rounded overflow-hidden flex items-center gap-5 hover:bg-white/15"> 
-              <Image src="/album.jpeg" width={120} height={80} alt="Capa do Albúm Deus e eu no sertão da dupla Victor e Leo" />
-              <strong>Deus e eu no Sertão</strong>
+              <Image src="/justin.jpg" width={120} height={80} alt="Capa do Albúm Deus e eu no sertão da dupla Victor e Leo" />
+              <strong>Purpose</strong>
             </a>
             <a href="#" className="bg-slate-50/10 rounded overflow-hidden flex items-center gap-5 hover:bg-white/15"> 
-              <Image src="/album.jpeg" width={120} height={80} alt="Capa do Albúm Deus e eu no sertão da dupla Victor e Leo" />
-              <strong>Deus e eu no Sertão</strong>
+              <Image src="/marilia.jpg" width={120} height={80} alt="Capa do Albúm Deus e eu no sertão da dupla Victor e Leo" />
+              <strong>Decretos Reais</strong>
             </a>
             <a href="#" className="bg-slate-50/10 rounded overflow-hidden flex items-center gap-5 hover:bg-white/15"> 
-              <Image src="/album.jpeg" width={120} height={80} alt="Capa do Albúm Deus e eu no sertão da dupla Victor e Leo" />
-              <strong>Deus e eu no Sertão</strong>
+              <Image src="/edSheeran.jpg" width={120} height={80} alt="Capa do Albúm Deus e eu no sertão da dupla Victor e Leo" />
+              <strong>Photograph</strong>
             </a>
               
           </div>
