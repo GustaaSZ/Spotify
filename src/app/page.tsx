@@ -1,7 +1,5 @@
 import Image from "next/image";
-import {Home as HomeIcon, Search, Library, Plus, Heart, ChevronLeft, ChevronRight, CircleChevronLeft} from 'lucide-react';
-// import { ChevronLeft, ChevronRight, CircleChevronLeft } from "../../node_modules/lucide-react/dist/lucide-react";
-// import { ChevronLeft, ChevronRight } from "../../node_modules/lucide-react/dist/lucide-react";
+import {Home as HomeIcon, Search, Library, Plus, Heart, ChevronLeft, ChevronRight, Play} from 'lucide-react';
 
 export default function Home() {
   return (
@@ -93,29 +91,59 @@ export default function Home() {
           {/* Div com as colunas para colocar as musicas */}
           <div className="grid grid-cols-3 gap-6 mt-5">
 
-            <a href="#" className="bg-slate-50/10 rounded overflow-hidden flex items-center gap-5 hover:bg-white/15"> 
+            <a href="#" className="bg-slate-50/10 group rounded overflow-hidden flex items-center gap-5 hover:bg-white/25"> 
               <Image src="/album.jpeg" width={120} height={80} alt="Capa do Albúm Deus e eu no sertão da dupla Victor e Leo" />
               <strong>Deus e eu no Sertão</strong>
+
+              {/* BOTÃO DO PLAY */}
+              <button className="p-3 rounded-full bg-green-500 text-zinc-950 ml-auto mr-8 invisible group-hover:visible">
+                <Play/>
+              </button>
             </a>
-            <a href="#" className="bg-slate-50/10 rounded overflow-hidden flex items-center gap-5 hover:bg-white/15"> 
+            <a href="#" className="bg-slate-50/10 group rounded overflow-hidden flex items-center gap-5 hover:bg-white/25"> 
               <Image src="/u2.jpg" width={120} height={80} alt="Capa do Albúm Deus e eu no sertão da dupla Victor e Leo" />
               <strong>The best of 1980-1990</strong>
+
+              {/* BOTÃO DO PLAY */}
+              <button className="p-3 rounded-full bg-green-500 text-zinc-950 ml-auto mr-8 invisible group-hover:visible">
+                <Play/>
+              </button>
             </a>
-            <a href="#" className="bg-slate-50/10 rounded overflow-hidden flex items-center gap-5 hover:bg-white/15"> 
+            <a href="#" className="bg-slate-50/10 group rounded overflow-hidden flex items-center gap-5 hover:bg-white/25"> 
               <Image src="/adele.jpg" width={120} height={80} alt="Capa do Albúm Deus e eu no sertão da dupla Victor e Leo" />
               <strong>Adele 25</strong>
+
+              {/* BOTÃO DO PLAY */}
+              <button className="p-3 rounded-full bg-green-500 text-zinc-950 ml-auto mr-8 invisible group-hover:visible">
+                <Play/>
+              </button>
             </a>
-            <a href="#" className="bg-slate-50/10 rounded overflow-hidden flex items-center gap-5 hover:bg-white/15"> 
+            <a href="#" className="bg-slate-50/10 group rounded overflow-hidden flex items-center gap-5 hover:bg-white/25"> 
               <Image src="/justin.jpg" width={120} height={80} alt="Capa do Albúm Deus e eu no sertão da dupla Victor e Leo" />
               <strong>Purpose</strong>
+
+              {/* BOTÃO DO PLAY */}
+              <button className="p-3 rounded-full bg-green-500 text-zinc-950 ml-auto mr-8 invisible group-hover:visible">
+                <Play/>
+              </button>
             </a>
-            <a href="#" className="bg-slate-50/10 rounded overflow-hidden flex items-center gap-5 hover:bg-white/15"> 
+            <a href="#" className="bg-slate-50/10 group rounded overflow-hidden flex items-center gap-5 hover:bg-white/25"> 
               <Image src="/marilia.jpg" width={120} height={80} alt="Capa do Albúm Deus e eu no sertão da dupla Victor e Leo" />
               <strong>Decretos Reais</strong>
+
+              {/* BOTÃO DO PLAY */}
+              <button className="p-3 rounded-full bg-green-500 text-zinc-950 ml-auto mr-8 invisible group-hover:visible">
+                <Play/>
+              </button>
             </a>
-            <a href="#" className="bg-slate-50/10 rounded overflow-hidden flex items-center gap-5 hover:bg-white/15"> 
+            <a href="#" className="bg-slate-50/10 group rounded overflow-hidden flex items-center gap-5 hover:bg-white/25"> 
               <Image src="/edSheeran.jpg" width={120} height={80} alt="Capa do Albúm Deus e eu no sertão da dupla Victor e Leo" />
               <strong>Photograph</strong>
+              
+              {/* BOTÃO DO PLAY */}
+              <button className="p-3 rounded-full bg-green-500 text-zinc-950 ml-auto mr-8 invisible group-hover:visible">
+                <Play/>
+              </button>
             </a>
               
           </div>
