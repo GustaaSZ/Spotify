@@ -86,12 +86,32 @@ export default function Home() {
 
           {/* Div com as colunas para colocar as musicas */}
           <div className="grid grid-cols-3 gap-6 mt-5">
-            <div className="bg-slate-50/10 rounded h-20"> Playlist</div>
-            <div className="bg-slate-50/10 rounded h-20"> Playlist</div>
-            <div className="bg-slate-50/10 rounded h-20"> Playlist</div>
-            <div className="bg-slate-50/10 rounded h-20"> Playlist</div>
-            <div className="bg-slate-50/10 rounded h-20"> Playlist</div>
-            <div className="bg-slate-50/10 rounded h-20"> Playlist</div>
+
+            <a href="#" className="bg-slate-50/10 rounded overflow-hidden flex items-center gap-5 hover:bg-white/15"> 
+              <Image src="/album.jpeg" width={120} height={80} alt="Capa do Albúm Deus e eu no sertão da dupla Victor e Leo" />
+              <strong>Deus e eu no Sertão</strong>
+            </a>
+            <a href="#" className="bg-slate-50/10 rounded overflow-hidden flex items-center gap-5 hover:bg-white/15"> 
+              <Image src="/album.jpeg" width={120} height={80} alt="Capa do Albúm Deus e eu no sertão da dupla Victor e Leo" />
+              <strong>Deus e eu no Sertão</strong>
+            </a>
+            <a href="#" className="bg-slate-50/10 rounded overflow-hidden flex items-center gap-5 hover:bg-white/15"> 
+              <Image src="/album.jpeg" width={120} height={80} alt="Capa do Albúm Deus e eu no sertão da dupla Victor e Leo" />
+              <strong>Deus e eu no Sertão</strong>
+            </a>
+            <a href="#" className="bg-slate-50/10 rounded overflow-hidden flex items-center gap-5 hover:bg-white/15"> 
+              <Image src="/album.jpeg" width={120} height={80} alt="Capa do Albúm Deus e eu no sertão da dupla Victor e Leo" />
+              <strong>Deus e eu no Sertão</strong>
+            </a>
+            <a href="#" className="bg-slate-50/10 rounded overflow-hidden flex items-center gap-5 hover:bg-white/15"> 
+              <Image src="/album.jpeg" width={120} height={80} alt="Capa do Albúm Deus e eu no sertão da dupla Victor e Leo" />
+              <strong>Deus e eu no Sertão</strong>
+            </a>
+            <a href="#" className="bg-slate-50/10 rounded overflow-hidden flex items-center gap-5 hover:bg-white/15"> 
+              <Image src="/album.jpeg" width={120} height={80} alt="Capa do Albúm Deus e eu no sertão da dupla Victor e Leo" />
+              <strong>Deus e eu no Sertão</strong>
+            </a>
+              
           </div>
         </main>
       </div>
