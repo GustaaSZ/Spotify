@@ -1,5 +1,5 @@
 # Here you can see how the project turned out
-![Imagem do Projeto](./public/app.PNG)
+![Imagem do Projeto](./public/app2.PNG)
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
