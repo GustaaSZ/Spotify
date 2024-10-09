@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {Home as HomeIcon, Search, Library, Plus, Heart, ChevronLeft, ChevronRight, Play} from 'lucide-react';
+import {Home as HomeIcon, Search, Library, Plus, Heart, ChevronLeft, ChevronRight, Play, Shuffle, SkipBack, SkipForward, Repeat, Mic2, LayoutList, Volume1, MonitorSmartphone, Maximize2 } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -85,7 +85,7 @@ export default function Home() {
             </button>
           </div>
 
-          {/* Texto */}
+          {/* Texto para a primeira parte da main */}
           <h1 className="font-semibold text-3xl mt-10 ml-1 text-zinc-100">Good Afternoon</h1>
 
           {/* Div com as colunas para colocar as musicas */}
@@ -97,7 +97,7 @@ export default function Home() {
 
               {/* BOTÃO DO PLAY */}
               <button className="p-3 rounded-full bg-green-500 text-zinc-950 ml-auto mr-8 invisible group-hover:visible">
-                <Play/>
+                <Play className="fill-transparent group-hover:fill-black"/>
               </button>
             </a>
             <a href="#" className="bg-slate-50/10 group rounded overflow-hidden flex items-center gap-5 hover:bg-white/25"> 
@@ -106,7 +106,7 @@ export default function Home() {
 
               {/* BOTÃO DO PLAY */}
               <button className="p-3 rounded-full bg-green-500 text-zinc-950 ml-auto mr-8 invisible group-hover:visible">
-                <Play/>
+                <Play className="fill-transparent group-hover:fill-black"/>
               </button>
             </a>
             <a href="#" className="bg-slate-50/10 group rounded overflow-hidden flex items-center gap-5 hover:bg-white/25"> 
@@ -115,7 +115,7 @@ export default function Home() {
 
               {/* BOTÃO DO PLAY */}
               <button className="p-3 rounded-full bg-green-500 text-zinc-950 ml-auto mr-8 invisible group-hover:visible">
-                <Play/>
+                <Play className="fill-transparent group-hover:fill-black"/>
               </button>
             </a>
             <a href="#" className="bg-slate-50/10 group rounded overflow-hidden flex items-center gap-5 hover:bg-white/25"> 
@@ -124,7 +124,7 @@ export default function Home() {
 
               {/* BOTÃO DO PLAY */}
               <button className="p-3 rounded-full bg-green-500 text-zinc-950 ml-auto mr-8 invisible group-hover:visible">
-                <Play/>
+                <Play className="fill-transparent group-hover:fill-black"/>
               </button>
             </a>
             <a href="#" className="bg-slate-50/10 group rounded overflow-hidden flex items-center gap-5 hover:bg-white/25"> 
@@ -133,7 +133,7 @@ export default function Home() {
 
               {/* BOTÃO DO PLAY */}
               <button className="p-3 rounded-full bg-green-500 text-zinc-950 ml-auto mr-8 invisible group-hover:visible">
-                <Play/>
+                <Play className="fill-transparent group-hover:fill-black"/>
               </button>
             </a>
             <a href="#" className="bg-slate-50/10 group rounded overflow-hidden flex items-center gap-5 hover:bg-white/25"> 
@@ -141,18 +141,157 @@ export default function Home() {
               <strong>Photograph</strong>
               
               {/* BOTÃO DO PLAY */}
-              <button className="p-3 rounded-full bg-green-500 text-zinc-950 ml-auto mr-8 invisible group-hover:visible">
-                <Play/>
+              <button className="p-3 rounded-full bg-green-500 text-zinc-950 ml-auto mr-8 invisible group-hover:visible ">
+                <Play className="fill-transparent group-hover:fill-black"/>
               </button>
             </a>
               
           </div>
+
+          {/* Texto para a SEGUNDA parte da main */}
+          <h1 className="font-semibold text-3xl mt-10 ml-1 text-zinc-100 hover:underline">Made for Gustavo Abrantes</h1>
+
+          {/* Div para a segunda parte da main */}
+          <div className="grid grid-cols-5 gap-6 mt-8">
+            <a href="" className="bg-white/5 group relative rounded-lg flex flex-col gap-2 hover:bg-white/10 p-3">
+              <Image src="/daily1.jpeg" className="w-full rounded-lg" width={90} height={60} alt="Capa do mix 1" />
+              <strong className="font-semibold">Daily Mix 1</strong>
+              <span className="text-xs text-zinc-400">Lana Del Rey, COIN, girl in red and more</span>
+
+              {/* BOTÃO DO PLAY */}
+              <button className="p-3 rounded-full bg-green-500 text-zinc-950 absolute bottom-24 ml-40 invisible group-hover:visible  ">
+                <Play className="fill-transparent group-hover:fill-black"/>
+              </button>
+            </a>
+
+            <a href="" className="bg-white/5 group relative rounded-lg flex flex-col gap-2 hover:bg-white/10 p-3">
+              <Image src="/daily2.jpeg" className="w-full rounded-lg" width={90} height={60} alt="Capa do mix 1" />
+              <strong className="font-semibold">Daily Mix 2</strong>
+              <span className="text-xs text-zinc-400">Wallows, COIN, playlists by spotify and more</span>
+
+              {/* BOTÃO DO PLAY */}
+              <button className="p-3 rounded-full bg-green-500 text-zinc-950 absolute bottom-24 ml-40 invisible group-hover:visible">
+                <Play className="fill-transparent group-hover:fill-black"/>
+              </button>
+            </a>
+
+            <a href="" className="bg-white/5 group relative rounded-lg flex flex-col gap-2 hover:bg-white/10 p-3">
+              <Image src="/daily3.jpeg" className="w-full rounded-lg" width={90} height={60} alt="Capa do mix 1" />
+              <strong className="font-semibold">Daily Mix 3</strong>
+              <span className="text-xs text-zinc-400">Wallows, COIN, girl in red and more</span>
+
+              {/* BOTÃO DO PLAY */}
+              <button className="p-3 rounded-full bg-green-500 text-zinc-950 absolute bottom-24 ml-40 invisible group-hover:visible">
+                <Play className="fill-transparent group-hover:fill-black"/>
+              </button>
+            </a>
+
+            <a href="" className="bg-white/5 group relative rounded-lg flex flex-col gap-2 hover:bg-white/10 p-3">
+              <Image src="/daily4.jpeg" className="w-full rounded-lg" width={90} height={60} alt="Capa do mix 1" />
+              <strong className="font-semibold">Daily Mix 4</strong>
+              <span className="text-xs text-zinc-400">The Weeknd, COIN, Only in spotify</span>
+
+              {/* BOTÃO DO PLAY */}
+              <button className="p-3 rounded-full bg-green-500 text-zinc-950 absolute bottom-24 ml-40 invisible group-hover:visible">
+                <Play className="fill-transparent group-hover:fill-black"/>
+              </button>
+            </a>
+
+            <a href="" className="bg-white/5 group relative rounded-lg flex flex-col gap-2 hover:bg-white/10 p-3">
+              <Image src="/daily5.jpeg" className="w-full rounded-lg" width={90} height={60} alt="Capa do mix 1" />
+              <strong className="font-semibold">Daily Mix 5</strong>
+              <span className="text-xs text-zinc-400">Bruno Mars, and your bests musics only in spotify</span>
+
+              {/* BOTÃO DO PLAY */}
+              <button className="p-3 rounded-full bg-green-500 text-zinc-950 absolute bottom-24 ml-40 invisible group-hover:visible">
+                <Play className="fill-transparent group-hover:fill-black"/>
+              </button>
+            </a>
+            
+          </div>
+
         </main>
       </div>
 
       {/* Estrutura do footer, forá da div do container principal */}
-      <footer className="bg-zinc-800 border-t border-zinc-700 p-6">
-        footer
+      <footer className="bg-zinc-800 border-t border-zinc-700 px-6 py-4 flex items-center justify-between">
+
+        {/* Sera dividido em 3 partes */}
+        <div className="flex items-center gap-3">
+          <Image src="/album.jpeg" width={56} height={56} alt="Capa do mix 1" />
+          <div className=" flex flex-col gap-1">
+            <strong>Deus e eu no sertão</strong>
+            <span className="text-sm text-zinc-400">Victor e Leo</span>
+          </div>
+          
+          <a href="" className="ml-6 group text-zinc-400 hover:text-red-500"> {/*Preenchendo as linhs do incone ao passar por cima  */}
+            <Heart className="fill-transparent group-hover:fill-red-500"/> {/* Preenchedo o corpo do icone ao passar por cima */}
+          </a>
+        </div>
+
+        {/* PLAYER */}
+        <div className=" flex flex-col items-center gap-2">
+
+          <div className="flex items-center space-x-4">
+            {/* BOTÃO DO Skip back */}
+            <button className="p-2  text-zinc-200 ">
+              <Shuffle size={22} className="hover:text-green-600"/>
+            </button>
+
+            {/* BOTÃO DO Skip back */}
+            <button className="p-2  text-zinc-200 ">
+              <SkipBack size={22} className=" fill-zinc-200"/>
+            </button>
+
+            {/* BOTÃO DO PLAY */}
+            <button className="p-2 rounded-full bg-zinc-100 text-zinc-950 ">
+              <Play size={22} className=" fill-black"/>
+            </button>
+
+            {/* BOTÃO DO Skip forward */}
+            <button className="p-2  text-zinc-200 ">
+              <SkipForward size={22} className=" fill-zinc-200"/>
+            </button>
+
+            <button className="p-2  text-zinc-400 ">
+              <Repeat size={22} className="hover:text-green-600"/>
+            </button>
+          </div>
+
+          {/* SLIDER */}
+          <div className=" flex items-center gap-2">
+              <span className="text-xs text-zinc-400"> 1:51</span>
+              <div className="h1 rounded-full w-80 bg-zinc-600">
+                <div className="bg-zinc-200 w-32 h-1 rounded-full"></div>
+              </div>
+              <span className="text-xs text-zinc-400"> 3:40</span>
+            </div>
+        </div>
+
+        {/* 3º DIV */}
+        <div className="flex items-center gap-3">
+          <button className="text-zinc-300">
+            <Mic2 size={20} className="hover:text-green-500"/>
+          </button>
+          <button className="text-zinc-300">
+            <LayoutList size={20} className="hover:text-green-500"/>
+          </button>
+          <button className="text-zinc-300">
+            <Volume1 size={20} className="hover:text-green-500"/>
+          </button>
+          <button className="text-zinc-300">
+            <MonitorSmartphone size={20} className="hover:text-green-500"/>
+          </button>
+          
+          <div className="h1 w-24 rounded-full bg-zinc-600">
+            <div className="bg-zinc-200 w-12 h-1 rounded-full"></div>
+          </div> 
+
+          <button className="text-zinc-300">
+            <Maximize2 size={20} className="hover:text-green-500"/>
+          </button>         
+          
+        </div>
       </footer>
 
     </div>
