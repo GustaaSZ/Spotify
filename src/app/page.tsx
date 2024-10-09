@@ -14,8 +14,14 @@ export default function Home() {
         {/* Estrutura do aside */}
         <aside className="w-72 bg-zinc-950 p-6">
 
+         {/* Div para a imagem do spotify */}
+          <a href="#" className="flex items-center gap-3">
+            <Image src="/spotify.png" width={60} height={60} alt="spotify icon" />
+            <strong className="text-2xl">Spotify</strong>
+          </a>
+
           {/* Bolas superiores */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 mt-8">
             <div className="w-4 h-4 bg-red-500 rounded-full"/>
             <div className="w-4 h-4 bg-yellow-500 rounded-full"/>
             <div className="w-4 h-4 bg-green-500 rounded-full"/>
