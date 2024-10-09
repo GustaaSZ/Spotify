@@ -1,6 +1,9 @@
 # Here you can see how the project turned out
 ![Imagem do Projeto](./public/app2.PNG)
 
+## Purpose 
+This project was done with learning purposes, seeking to gain knowledge in development with react using tailwind.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
