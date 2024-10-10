@@ -18,7 +18,7 @@ const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => {
                 />
                 <button
                     onClick={onClose}
-                    className="mt-20 w-44 px-4 py-2 ml-40 bg-zinc-200 hover:bg-green-500 text-zinc-800 text-xl rounded font-semibold"
+                    className="mt-20 w-44 px-4 py-2 ml-40 bg-green-400 hover:bg-green-600 text-zinc-800 text-xl rounded font-semibold"
                 >
                     Fechar
                 </button>
