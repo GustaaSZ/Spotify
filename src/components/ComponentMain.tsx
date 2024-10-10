@@ -1,11 +1,14 @@
 import { ChevronLeft, ChevronRight, Play } from "lucide-react";
 import Image from "next/image";
+import { PlayButtonPlaylists } from "./PlayButtonPlaylists";
+import { PlayButtonMusics } from "./PlayButtonMusics";
 
 export function ComponentMain() {
 
     return(
     
         <main className="flex-1 p-7">
+          
           {/* div para os botões superiores */}
           <div className="flex items-center gap-6 ml-1">
             <button className="rounded-full bg-black/40 p-1 hover:bg-zinc-700">
@@ -26,55 +29,43 @@ export function ComponentMain() {
               <Image src="/album.jpeg" width={120} height={80} alt="Capa do Albúm Deus e eu no sertão da dupla Victor e Leo" />
               <strong>Deus e eu no Sertão</strong>
 
-              {/* BOTÃO DO PLAY */}
-              <button className="p-3 rounded-full bg-green-500 text-zinc-950 ml-auto mr-8 invisible group-hover:visible">
-                <Play className="fill-transparent group-hover:fill-black"/>
-              </button>
+              {/* CHAMANDO O COMPONENTE DE PlayButtonMusics */}
+              <PlayButtonMusics />
             </a>
             <a href="#" className="bg-slate-50/10 group rounded overflow-hidden flex items-center gap-5 hover:bg-white/25"> 
               <Image src="/u2.jpg" width={120} height={80} alt="Capa do Albúm Deus e eu no sertão da dupla Victor e Leo" />
               <strong>The best of 1980-1990</strong>
 
-              {/* BOTÃO DO PLAY */}
-              <button className="p-3 rounded-full bg-green-500 text-zinc-950 ml-auto mr-8 invisible group-hover:visible">
-                <Play className="fill-transparent group-hover:fill-black"/>
-              </button>
+              {/* CHAMANDO O COMPONENTE DE PlayButtonMusics */}
+              <PlayButtonMusics />
             </a>
             <a href="#" className="bg-slate-50/10 group rounded overflow-hidden flex items-center gap-5 hover:bg-white/25"> 
               <Image src="/adele.jpg" width={120} height={80} alt="Capa do Albúm Deus e eu no sertão da dupla Victor e Leo" />
               <strong>Adele 25</strong>
 
-              {/* BOTÃO DO PLAY */}
-              <button className="p-3 rounded-full bg-green-500 text-zinc-950 ml-auto mr-8 invisible group-hover:visible">
-                <Play className="fill-transparent group-hover:fill-black"/>
-              </button>
+              {/* CHAMANDO O COMPONENTE DE PlayButtonMusics */}
+              <PlayButtonMusics />
             </a>
             <a href="#" className="bg-slate-50/10 group rounded overflow-hidden flex items-center gap-5 hover:bg-white/25"> 
               <Image src="/justin.jpg" width={120} height={80} alt="Capa do Albúm Deus e eu no sertão da dupla Victor e Leo" />
               <strong>Purpose</strong>
 
-              {/* BOTÃO DO PLAY */}
-              <button className="p-3 rounded-full bg-green-500 text-zinc-950 ml-auto mr-8 invisible group-hover:visible">
-                <Play className="fill-transparent group-hover:fill-black"/>
-              </button>
+              {/* CHAMANDO O COMPONENTE DE PlayButtonMusics */}
+              <PlayButtonMusics />
             </a>
             <a href="#" className="bg-slate-50/10 group rounded overflow-hidden flex items-center gap-5 hover:bg-white/25"> 
               <Image src="/marilia.jpg" width={120} height={80} alt="Capa do Albúm Deus e eu no sertão da dupla Victor e Leo" />
               <strong>Decretos Reais</strong>
 
-              {/* BOTÃO DO PLAY */}
-              <button className="p-3 rounded-full bg-green-500 text-zinc-950 ml-auto mr-8 invisible group-hover:visible">
-                <Play className="fill-transparent group-hover:fill-black"/>
-              </button>
+              {/* CHAMANDO O COMPONENTE DE PlayButtonMusics */}
+              <PlayButtonMusics />
             </a>
             <a href="#" className="bg-slate-50/10 group rounded overflow-hidden flex items-center gap-5 hover:bg-white/25"> 
               <Image src="/edSheeran.jpg" width={120} height={80} alt="Capa do Albúm Deus e eu no sertão da dupla Victor e Leo" />
               <strong>Photograph</strong>
               
-              {/* BOTÃO DO PLAY */}
-              <button className="p-3 rounded-full bg-green-500 text-zinc-950 ml-auto mr-8 invisible group-hover:visible ">
-                <Play className="fill-transparent group-hover:fill-black"/>
-              </button>
+              {/* CHAMANDO O COMPONENTE DE PlayButtonMusics */}
+              <PlayButtonMusics />
             </a>
               
           </div>
@@ -89,10 +80,8 @@ export function ComponentMain() {
               <strong className="font-semibold">Daily Mix 1</strong>
               <span className="text-xs text-zinc-400">Lana Del Rey, COIN, girl in red and more</span>
 
-              {/* BOTÃO DO PLAY */}
-              <button className="p-3 rounded-full bg-green-500 text-zinc-950 absolute bottom-24 ml-40 invisible group-hover:visible  ">
-                <Play className="fill-transparent group-hover:fill-black"/>
-              </button>
+              {/* Fazendo importação do PlayButton */}
+              <PlayButtonPlaylists/>
             </a>
 
             <a href="" className="bg-white/5 group relative rounded-lg flex flex-col gap-2 hover:bg-white/10 p-3">
@@ -100,10 +89,8 @@ export function ComponentMain() {
               <strong className="font-semibold">Daily Mix 2</strong>
               <span className="text-xs text-zinc-400">Wallows, COIN, playlists by spotify and more</span>
 
-              {/* BOTÃO DO PLAY */}
-              <button className="p-3 rounded-full bg-green-500 text-zinc-950 absolute bottom-24 ml-40 invisible group-hover:visible">
-                <Play className="fill-transparent group-hover:fill-black"/>
-              </button>
+              {/* Fazendo importação do PlayButton */}
+              <PlayButtonPlaylists/>
             </a>
 
             <a href="" className="bg-white/5 group relative rounded-lg flex flex-col gap-2 hover:bg-white/10 p-3">
@@ -111,10 +98,8 @@ export function ComponentMain() {
               <strong className="font-semibold">Daily Mix 3</strong>
               <span className="text-xs text-zinc-400">Wallows, COIN, girl in red and more</span>
 
-              {/* BOTÃO DO PLAY */}
-              <button className="p-3 rounded-full bg-green-500 text-zinc-950 absolute bottom-24 ml-40 invisible group-hover:visible">
-                <Play className="fill-transparent group-hover:fill-black"/>
-              </button>
+              {/* Fazendo importação do PlayButton */}
+              <PlayButtonPlaylists/>
             </a>
 
             <a href="" className="bg-white/5 group relative rounded-lg flex flex-col gap-2 hover:bg-white/10 p-3">
@@ -122,10 +107,8 @@ export function ComponentMain() {
               <strong className="font-semibold">Daily Mix 4</strong>
               <span className="text-xs text-zinc-400">The Weeknd, COIN, Only in spotify</span>
 
-              {/* BOTÃO DO PLAY */}
-              <button className="p-3 rounded-full bg-green-500 text-zinc-950 absolute bottom-24 ml-40 invisible group-hover:visible">
-                <Play className="fill-transparent group-hover:fill-black"/>
-              </button>
+              {/* Fazendo importação do PlayButton */}
+              <PlayButtonPlaylists/>
             </a>
 
             <a href="" className="bg-white/5 group relative rounded-lg flex flex-col gap-2 hover:bg-white/10 p-3">
@@ -133,10 +116,8 @@ export function ComponentMain() {
               <strong className="font-semibold">Daily Mix 5</strong>
               <span className="text-xs text-zinc-400">Bruno Mars, and your bests musics only in spotify</span>
 
-              {/* BOTÃO DO PLAY */}
-              <button className="p-3 rounded-full bg-green-500 text-zinc-950 absolute bottom-24 ml-40 invisible group-hover:visible">
-                <Play className="fill-transparent group-hover:fill-black"/>
-              </button>
+              {/* Fazendo importação do PlayButton */}
+              <PlayButtonPlaylists />
             </a>
             
           </div>
