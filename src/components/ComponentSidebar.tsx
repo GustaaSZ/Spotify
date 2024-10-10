@@ -19,7 +19,7 @@ export function ComponentSidebar() {
             </div>
           
             <nav className="space-y-5 mt-10">
-                <a href="" className="flex items-center  gap-3 text-ms font-semibold text-zinc-300 hover:text-zinc-50 hover:font-bold">
+                <a href="/Home" className="flex items-center  gap-3 text-ms font-semibold text-zinc-300 hover:text-zinc-50 hover:font-bold">
                     <HomeIcon />
                     Home
                 </a>
