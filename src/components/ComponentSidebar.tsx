@@ -1,7 +1,13 @@
 import { HomeIcon, Library, Search, Heart, Plus } from "lucide-react";
 import Image from "next/image";
+import React, { useState } from 'react';
+import SearchModal from "./SearchModal";
 
 export function ComponentSidebar() {
+    const [isModalOpen, setIsModalOpen] = useState(false); // Estado para controlar o modal
+
+    const handleOpenModal = () => setIsModalOpen(true); // Função para abrir o modal
+    const handleCloseModal = () => setIsModalOpen(false); // Função para fechar o modal
 
     return(
         <aside className="w-72 bg-zinc-950 p-6">
@@ -23,14 +29,23 @@ export function ComponentSidebar() {
                     <HomeIcon />
                     Home
                 </a>
-                <a href="" className="flex items-center  gap-3 text-ms font-semibold text-zinc-300 hover:text-zinc-50 hover:font-bold">
+                <a 
+                    href="" 
+                    onClick={(e) => {
+                        e.preventDefault(); // Previne o comportamento padrão do link
+                        handleOpenModal();
+                    }} 
+                    className="flex items-center  gap-3 text-ms font-semibold text-zinc-300 hover:text-zinc-50 hover:font-bold">
                     <Search />
                     Search
+                    
                 </a>
                 <a href="" className="flex items-center gap-3 text-ms font-semibold text-zinc-300 hover:text-zinc-50 hover:font-bold">
                     <Library/>
                     Your Lybrary
                 </a>
+                {/* Renderiza o modal */}
+                <SearchModal isOpen={isModalOpen} onClose={handleCloseModal} />
             </nav>
 
             <nav className="space-y-5 mt-14">
