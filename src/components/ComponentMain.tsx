@@ -77,7 +77,7 @@ export function ComponentMain() {
         {/* Div para a segunda parte da main */}
         <div className="grid grid-cols-5 gap-6 mt-8">
           <a href="/Daily1" className="bg-white/5 group relative rounded-lg flex flex-col gap-2 hover:bg-white/10 p-3">
-            <Image src="/daily1.jpeg" className="w-full rounded-lg" width={90} height={60} alt="Capa do mix 1" />
+            <Image src="/daily1.jpeg" className="w-full rounded-lg" width={240} height={240} alt="Capa do mix 1" />
             <strong className="font-semibold">Daily Mix 1</strong>
             <span className="text-xs text-zinc-400">Lana Del Rey, COIN, girl in red and more</span>
 
@@ -86,7 +86,7 @@ export function ComponentMain() {
           </a>
 
           <a href="/Daily2" className="bg-white/5 group relative rounded-lg flex flex-col gap-2 hover:bg-white/10 p-3">
-            <Image src="/daily2.jpeg" className="w-full rounded-lg" width={90} height={60} alt="Capa do mix 1" />
+            <Image src="/daily2.jpeg" className="w-full rounded-lg" width={240} height={240} alt="Capa do mix 2" />
             <strong className="font-semibold">Daily Mix 2</strong>
             <span className="text-xs text-zinc-400">Wallows, COIN, playlists by spotify and more</span>
 
@@ -95,7 +95,7 @@ export function ComponentMain() {
           </a>
 
           <a href="/Daily3" className="bg-white/5 group relative rounded-lg flex flex-col gap-2 hover:bg-white/10 p-3">
-            <Image src="/daily3.jpeg" className="w-full rounded-lg" width={90} height={60} alt="Capa do mix 1" />
+            <Image src="/daily3.jpeg" className="w-full rounded-lg" width={240} height={240} alt="Capa do mix 3" />
             <strong className="font-semibold">Daily Mix 3</strong>
             <span className="text-xs text-zinc-400">Wallows, COIN, girl in red and more</span>
 
@@ -104,7 +104,7 @@ export function ComponentMain() {
           </a>
 
           <a href="/Daily4" className="bg-white/5 group relative rounded-lg flex flex-col gap-2 hover:bg-white/10 p-3">
-            <Image src="/daily4.jpeg" className="w-full rounded-lg" width={90} height={60} alt="Capa do mix 1" />
+            <Image src="/daily4.jpeg" className="w-full rounded-lg" width={240} height={240} alt="Capa do mix 1" />
             <strong className="font-semibold">Daily Mix 4</strong>
             <span className="text-xs text-zinc-400">The Weeknd, COIN, Only in spotify</span>
 
@@ -113,7 +113,7 @@ export function ComponentMain() {
           </a>
 
           <a href="/Daily5" className="bg-white/5 group relative rounded-lg flex flex-col gap-2 hover:bg-white/10 p-3">
-            <Image src="/daily5.jpeg" className="w-full rounded-lg" width={90} height={60} alt="Capa do mix 1" />
+            <Image src="/daily5.jpeg" className="w-full rounded-lg" width={240} height={240} alt="Capa do mix 1" />
             <strong className="font-semibold">Daily Mix 5</strong>
             <span className="text-xs text-zinc-400">Bruno Mars, and your bests musics only in spotify</span>
 
